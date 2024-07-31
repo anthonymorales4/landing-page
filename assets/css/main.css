@@ -2134,7 +2134,10 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 100%;
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			overflow: hidden;
 		}
 
 			.image.avatar:before {
@@ -2142,8 +2145,12 @@ input, select, textarea {
 			}
 
 			.image.avatar img {
-				border-radius: 100%;
-				width: 100%;
+				width: 200%;
+				height: auto;
+				position: absolute;
+				top: -100%;
+				left: 60%;
+				transform: translateX(-52%);
 			}
 
 /* List */
@@ -2550,6 +2557,9 @@ input, select, textarea {
 			color: #b2b2b2 !important;
 			cursor: default;
 		}
+		.button i {
+				margin-left: 3px; 
+		}
 
 /* Work Item */
 
@@ -2640,7 +2650,7 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 10em;
 		}
 
 /* Footer */
