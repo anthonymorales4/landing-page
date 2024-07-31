@@ -29,7 +29,7 @@
 						<header class="major">
 							<h2>About Me</h2>
 						</header>
-						<p>Hi! I consider myself a tech enthusiast that enjoys solving real-world problems using code.
+						<p>Hi! I'm a tech enthusiast that enjoys solving real-world problems using code.
 							I'm most passionate about turning my ideas into reality and creating value for others.</p>
 						<a href="files/cv.pdf" class="button" target="_blank">My Resume 
 						 	<i class="icon light fa-file-pdf"></i>
@@ -41,7 +41,7 @@
 						<h2>Projects</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<a href="images/coding.jpeg" class="image fit thumb"><img src="images/coding.jpeg" alt="Anthony Morales" /></a>
 								<h3>Personal Website</h3>
 								<p>GitHub: <a href="https://github.com/anthonymorales4/landing-page">https://github.com/anthonymorales4/landing-page</a></p>
 								<p>HTML, CSS</p>
@@ -57,16 +57,16 @@
 						<h2>Contact</h2>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
+								<form onsubmit="handleSubmit(event)">
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" required/></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required/></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4" required></textarea></div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+										</ul>
 									</div>
 								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
@@ -83,7 +83,7 @@
 									</li>
 									<li>
 										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">2020anthonymorales@gmail.com</a>
+										<a href="mailto:2020anthonymorales@gmail.com">2020anthonymorales@gmail.com</a>
 									</li>
 								</ul>
 							</div>
@@ -112,6 +112,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/contact.js"></script>
 
 	</body>
 </html>
